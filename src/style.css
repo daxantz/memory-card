@@ -1,0 +1,90 @@
+body {
+  background-image: url(../src/assets/11740828_4824751.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.CardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.modal {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 4rem;
+  background-image: url(../src/assets/capshield.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: none;
+  transition: transform 0.3s ease;
+  color: white;
+
+  p {
+    font-size: 1.5rem;
+    color: black;
+  }
+}
+
+.modal:hover,
+.Card:hover {
+  animation: grow 1s ease-out forwards;
+  cursor: pointer;
+}
+img {
+  max-width: 80%;
+  border-radius: 50%;
+}
+
+p {
+  font-weight: 900;
+  font-size: 1.75rem;
+  text-align: center;
+}
+.Card {
+  max-width: 300px;
+  width: 90%;
+  padding: 1.5rem 0.5rem;
+  border-radius: 10%;
+  justify-self: center;
+  background-color: rgb(209, 203, 203);
+
+  p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.gameOverText,
+.score {
+  h1 {
+    text-align: center;
+  }
+  color: white;
+  font-size: 2rem;
+}
+
+.loadingText {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
